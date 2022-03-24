@@ -13,6 +13,20 @@ struct ContentView: View {
             Color("BackgroundColor")
             ZStack {
                 Color.white
+                VStack {
+                    Image("Hero")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                    VStack {
+                        Text("Order Summary")
+                            .font(.custom("Red Hat Display", size: 27))
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color("HeaderColor"))
+                        Spacer()
+                            .frame(height: 10)
+                    }
+                    .padding(30)
+                }
             }
             .clipShape(RoundedRectangle(cornerRadius: 15))
             .padding(.horizontal, 30)
