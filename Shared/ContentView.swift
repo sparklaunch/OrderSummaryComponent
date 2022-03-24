@@ -39,6 +39,8 @@ struct ContentView: View {
                                 Image("Music")
                                     .resizable()
                                     .frame(width: 64, height: 64)
+                                Spacer()
+                                    .frame(width: 15)
                                 VStack(spacing: 5) {
                                     Text("Annual Plan")
                                         .font(.custom("Red Hat Display", size: 18))
@@ -49,6 +51,12 @@ struct ContentView: View {
                                         .foregroundColor(Color("BodyColor"))
                                         .fontWeight(.bold)
                                 }
+                                Spacer()
+                                Text("Change")
+                                    .font(.custom("Red Hat Display", size: 18))
+                                    .foregroundColor(Color("AccentColor"))
+                                    .fontWeight(.bold)
+                                    .underline()
                             }
                             .padding(20)
                         }
