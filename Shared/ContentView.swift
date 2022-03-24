@@ -52,11 +52,15 @@ struct ContentView: View {
                                         .fontWeight(.bold)
                                 }
                                 Spacer()
-                                Text("Change")
-                                    .font(.custom("Red Hat Display", size: 18))
-                                    .foregroundColor(Color("AccentColor"))
-                                    .fontWeight(.bold)
-                                    .underline()
+                                Button {
+
+                                } label: {
+                                    Text("Change")
+                                        .font(.custom("Red Hat Display", size: 18))
+                                        .foregroundColor(Color("AccentColor"))
+                                        .fontWeight(.bold)
+                                        .underline()
+                                }
                             }
                             .padding(20)
                         }
@@ -79,12 +83,13 @@ struct ContentView: View {
                         }
                         Spacer()
                             .frame(height: 25)
-                        Button {
+                        Button(role: .cancel) {
 
                         } label: {
                             Text("Cancel Order")
                                 .font(.custom("Red Hat Display", size: 20))
                                 .fontWeight(.black)
+                                .foregroundColor(Color("HeaderColor"))
                         }
                     }
                     .padding(30)
