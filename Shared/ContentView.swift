@@ -9,9 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .font(.custom("Red Hat Display", size: 32))
-            .padding()
+        ZStack {
+            Color("BackgroundColor")
+            ZStack {
+                Color.white
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 15))
+            .padding(.horizontal, 30)
+            .scaledToFit()
+            .shadow(radius: 5)
+        }
+        .ignoresSafeArea()
     }
 }
 
