@@ -13,6 +13,7 @@
 		9060DE1E27EC48260043AD01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060DE0C27EC48250043AD01 /* ContentView.swift */; };
 		9060DE1F27EC48260043AD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9060DE0D27EC48260043AD01 /* Assets.xcassets */; };
 		9060DE2027EC48260043AD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9060DE0D27EC48260043AD01 /* Assets.xcassets */; };
+		9060DE2B27EC48D80043AD01 /* RedHatDisplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9060DE2A27EC48D80043AD01 /* RedHatDisplay.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		9060DE1227EC48260043AD01 /* OrderSummaryComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderSummaryComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9060DE1827EC48260043AD01 /* OrderSummaryComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderSummaryComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9060DE1A27EC48260043AD01 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9060DE2A27EC48D80043AD01 /* RedHatDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RedHatDisplay.ttf; sourceTree = "<group>"; };
+		9060DE2C27EC48F60043AD01 /* OrderSummaryComponent--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OrderSummaryComponent--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,7 @@
 		9060DE0527EC48250043AD01 = {
 			isa = PBXGroup;
 			children = (
+				9060DE2C27EC48F60043AD01 /* OrderSummaryComponent--iOS--Info.plist */,
 				9060DE0A27EC48250043AD01 /* Shared */,
 				9060DE1927EC48260043AD01 /* macOS */,
 				9060DE1327EC48260043AD01 /* Products */,
@@ -54,6 +58,7 @@
 		9060DE0A27EC48250043AD01 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9060DE2927EC48CB0043AD01 /* Fonts */,
 				9060DE0B27EC48250043AD01 /* OrderSummaryComponentApp.swift */,
 				9060DE0C27EC48250043AD01 /* ContentView.swift */,
 				9060DE0D27EC48260043AD01 /* Assets.xcassets */,
@@ -76,6 +81,14 @@
 				9060DE1A27EC48260043AD01 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		9060DE2927EC48CB0043AD01 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9060DE2A27EC48D80043AD01 /* RedHatDisplay.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9060DE1F27EC48260043AD01 /* Assets.xcassets in Resources */,
+				9060DE2B27EC48D80043AD01 /* RedHatDisplay.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +330,7 @@
 				DEVELOPMENT_TEAM = 862P2X6G9G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OrderSummaryComponent--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -346,6 +361,7 @@
 				DEVELOPMENT_TEAM = 862P2X6G9G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OrderSummaryComponent--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
