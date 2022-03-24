@@ -61,6 +61,31 @@ struct ContentView: View {
                             .padding(20)
                         }
                         .clipShape(RoundedRectangle(cornerRadius: 15))
+                        Spacer()
+                            .frame(height: 30)
+                        Button {
+
+                        } label: {
+                            ZStack {
+                                Color("AccentColor")
+                                    .frame(height: 60)
+                                Text("Proceed to Payment")
+                                    .font(.custom("Red Hat Display", size: 20))
+                                    .fontWeight(.black)
+                                    .foregroundColor(.white)
+                            }
+                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                            .shadow(radius: 5)
+                        }
+                        Spacer()
+                            .frame(height: 25)
+                        Button {
+
+                        } label: {
+                            Text("Cancel Order")
+                                .font(.custom("Red Hat Display", size: 20))
+                                .fontWeight(.black)
+                        }
                     }
                     .padding(30)
                 }
