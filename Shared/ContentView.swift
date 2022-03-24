@@ -24,6 +24,13 @@ struct ContentView: View {
                             .foregroundColor(Color("HeaderColor"))
                         Spacer()
                             .frame(height: 10)
+                        Text("You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!")
+                            .font(.custom("Red Hat Display", size: 18))
+                            .foregroundColor(Color("BodyColor"))
+                            .fixedSize(horizontal: false, vertical: true)
+                            .lineSpacing(5)
+                            .multilineTextAlignment(.center)
+                            .padding(10)
                     }
                     .padding(30)
                 }
