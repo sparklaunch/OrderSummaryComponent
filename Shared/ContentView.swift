@@ -39,6 +39,16 @@ struct ContentView: View {
                                 Image("Music")
                                     .resizable()
                                     .frame(width: 64, height: 64)
+                                VStack(spacing: 5) {
+                                    Text("Annual Plan")
+                                        .font(.custom("Red Hat Display", size: 18))
+                                        .fontWeight(.bold)
+                                        .foregroundColor(Color("HeaderColor"))
+                                    Text("$59.99/year")
+                                        .font(.custom("Red Hat Display", size: 18))
+                                        .foregroundColor(Color("BodyColor"))
+                                        .fontWeight(.bold)
+                                }
                             }
                             .padding(20)
                         }
