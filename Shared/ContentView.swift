@@ -20,7 +20,7 @@ struct ContentView: View {
                     VStack {
                         Text("Order Summary")
                             .font(.custom("Red Hat Display", size: 27))
-                            .fontWeight(.heavy)
+                            .fontWeight(.black)
                             .foregroundColor(Color("HeaderColor"))
                         Spacer()
                             .frame(height: 10)
@@ -31,6 +31,18 @@ struct ContentView: View {
                             .lineSpacing(5)
                             .multilineTextAlignment(.center)
                             .padding(10)
+                        Spacer()
+                            .frame(height: 10)
+                        ZStack {
+                            Color("CardColor")
+                            HStack {
+                                Image("Music")
+                                    .resizable()
+                                    .frame(width: 64, height: 64)
+                            }
+                            .padding(20)
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 15))
                     }
                     .padding(30)
                 }
